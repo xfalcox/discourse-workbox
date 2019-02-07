@@ -2,5 +2,5 @@ importScripts('https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox
 
 workbox.routing.registerRoute(
   /\.(?:js|css)$/,
-  workbox.strategies.staleWhileRevalidate(),
-); 
+  workbox.strategies.staleWhileRevalidate()
+);
