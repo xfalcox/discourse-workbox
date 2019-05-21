@@ -1,6 +1,6 @@
 importScripts('https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js');
 
 workbox.routing.registerRoute(
-  /.*?/,
-  workbox.strategies.NetworkFirst()
+  new RegExp('.*?'),
+  new workbox.strategies.NetworkFirst()
 );
